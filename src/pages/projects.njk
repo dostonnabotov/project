@@ -1,0 +1,97 @@
+---
+title: Project | Projects
+layout: 'base.njk'
+---
+  
+
+<button onclick="topFunction()" id="backToTop" class="back-to-top" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<div class="grid grid--main container--wide">
+  <div class="content container--narrow flow">
+    <article class="flow">
+      <h2 class="fs-700">Projects</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+        obcaecati. Incidunt ratione illum libero, iste laudantium dolores
+        doloremque odio veritatis ipsam expedita nam explicabo tempore
+        officiis! Facere maxime aliquam doloremque.
+      </p>
+    </article>
+    <div class="layouts flow">
+      {% layout 
+        title="Math", 
+        imgUrl="https://source.unsplash.com/500x300/",
+        imgAlt="random image generator",
+        link="#",
+        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quibusdam dolor expedita, possimus quisquam quas nemo nam
+            deserunt velit hic quasi, consequuntur"
+      %}
+
+      {% layout 
+        title="Physics", 
+        imgUrl="https://source.unsplash.com/700x500/",
+        imgAlt="random image generator",
+        link="#",
+        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quibusdam dolor expedita, possimus quisquam quas nemo nam
+            deserunt velit hic quasi, consequuntur",
+        dark="true"
+      %}
+
+      {% layout 
+        title="Science", 
+        imgUrl="https://source.unsplash.com/600x300/",
+        imgAlt="random image generator",
+        link="#",
+        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quibusdam dolor expedita, possimus quisquam quas nemo nam
+            deserunt velit hic quasi, consequuntur"
+      %}
+
+      {% layout 
+        title="IT", 
+        imgUrl="https://source.unsplash.com/900x700/",
+        imgAlt="random image generator",
+        link="#",
+        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quibusdam dolor expedita, possimus quisquam quas nemo nam
+            deserunt velit hic quasi, consequuntur",
+        dark="true"
+      %}
+
+    </div>
+  </div>
+  <aside class="sidebar">
+    <div class="sidebar__regions flow">
+      <nav class="sidebar__region sticky">
+        <h2 class="sr-only">Side Menu</h2>
+        <ul class="fa-ul flow">
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-check"></i> </span>
+            <a href="#" class="u-hover">Math</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-check"></i> </span>
+            <a href="#" class="u-hover">Physics</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-check"></i> </span>
+            <a href="#" class="u-hover">Science</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-check"></i> </span>
+            <a href="#" class="u-hover">IT</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="sidebar__region">
+        <h2 class="sr-only">Side Menu</h2>
+        {% include "aside-snippet.njk" %}
+      </nav>
+    </div>
+  </aside>
+</div>
