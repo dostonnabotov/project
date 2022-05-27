@@ -1,0 +1,109 @@
+---
+title: Math | Vector Algebra
+layout: 'base.njk'
+---
+
+{% include 'back-to-top.njk' %}
+<div class="grid grid--main container--wide">
+  <div class="content flow">
+    <article class="flow equations">
+      <h2 class="fs-700">Vector Algebra Formulas</h2>
+      <h3>The Coordinates of two vectors</h3>
+      <p>\(A(x_1,y_1,z_1)\) and \(B(x_2,y_2,z_2)\)</p>
+      <p>$$\overrightarrow{AB}=\langle x_2-x_1, y_2-y_1, y_2-y_1\rangle$$</p>
+      <h3>The Magnitude of vector</h3>
+      <p>$$\left\vert \vec{a} \right\vert = \sqrt{a^2_x+a^2_y+a^2_z}$$</p>
+      <h3>The Coordinates of a vector</h3>
+      <p>
+        $$a_x = \left\vert \vec{a} \right\vert \times \cos \alpha$$ $$a_y = \left\vert \vec{a} \right\vert \times \cos \beta$$
+        $$a_z = \left\vert \vec{a} \right\vert \times \cos \gamma$$
+      </p>
+      <h3>The Direction Cosines of a vector</h3>
+      <p>
+        $$\cos\alpha = {a_x\over \left\vert \vec{a} \right\vert}$$ $$\cos\beta = {a_y\over \left\vert \vec{a} \right\vert}$$
+        $$\cos\gamma = {a_z\over \left\vert \vec{a} \right\vert}$$
+      </p>
+      <p class="note">
+        \(\cos^2 \alpha + \cos^2 \beta + \cos^2 \gamma = 1\)
+      </p>
+      <h3>The Angle between two vectors</h3>
+      <p>
+        $$\cos\theta = {\vec{a} \cdot \vec{b}\over\left\vert\vec{a}\right\vert \cdot \left\vert\vec{b}
+        \right\vert}$$
+      </p>
+      <h3>The Angles of the Triangle</h3>
+      <p>
+        $$\cos A = {\overrightarrow{AB} \cdot \overrightarrow{AC}\over\left\vert\overrightarrow{AB}\right\vert \cdot
+        \left\vert\overrightarrow{AC} \right\vert}$$
+      </p>
+      <p>
+        $$\cos B = {\overrightarrow{BA} \cdot \overrightarrow{BC}\over\left\vert\overrightarrow{BA}\right\vert \cdot
+        \left\vert\overrightarrow{BC} \right\vert}$$
+      </p>
+      <p>
+        $$\cos C = {\overrightarrow{CA} \cdot \overrightarrow{CB}\over\left\vert\overrightarrow{CA}\right\vert \cdot
+        \left\vert\overrightarrow{CB} \right\vert}$$
+      </p>
+      <h3>Triple Product</h3>
+      <p>$$\vec{a}\vec{b}\vec{c} = \begin{bmatrix}a_x & a_y & a_z \\\ b_x & b_y & b_z \\\ c_x & c_y & c_z \end{bmatrix}$$</p>
+      <h3>Linearly Independent vectors</h3>
+      <p>$$\vec{a}\vec{b}\vec{c}\ne 0$$</p>
+      <h3>Linearly Dependent vectors</h3>
+      <p>$$\vec{a}\vec{b}\vec{c} = 0$$</p>
+      <h3>Coplanar vectors</h3>
+      <p>$$\vec{a}\vec{b}\vec{c} = 0$$</p>
+      <p class="note">
+        If the result = 0, then it's
+        <b>coplanar</b>
+        <br/> If the result > 0, then it's
+        <b>right-handed</b>
+        <br/> If the result < 0, then it's
+        <b>left-handed</b>
+      </p>
+      <h3>Collinear vectors</h3>
+      <p>$$\vec{a}\rightrightarrows\vec{b} \Leftrightarrow {a_x\over b_x}={a_y\over b_y}={a_z\over b_z}$$</p>
+      <p class="note">\(\vec{a}\rightrightarrows\vec{b}\) means that \(\vec{a}\) is parallel to \(\vec{b}\)</p>
+      <p class="note">
+        If the vector are linearly dependent, you are often asked to find the express \(\vec{c}\) as a linear combination of
+        \(\vec{a}\) and \(\vec{b}\). Let's solve it.
+      </p>
+      <p>
+        <i class="danger">(1)</i>$$\vec{c} = k_1\vec{a} + k_2\vec{a}$$</p>
+      <p>
+        <i class="danger">(2)</i>$$(c_x, c_y, c_z) = k_1(a_x, a_y, a_z) + k_2(b_x, b_y,b_z)$$
+      </p>
+      <p>
+        <i class="danger">(3)</i>$$(c_x, c_y, c_z) = (a_xk_1 + b_xk_2, a_yk_1 + b_yk_2, a_zk_1 + b_zk_2)$$
+      </p>
+      <p>
+        <i class="danger">(4)</i>
+        $$c_x = a_xk_1 + b_xk_2$$ $$c_y = a_yk_1 + b_yk_2$$ $$c_z = a_zk_1 + b_zk_2$$
+      </p>
+      <p>
+        <i class="danger">(5)</i>
+        $$k_1 = m, k_2 = n, \vec{c} = m\vec{a} + n\vec{a}$$</p>
+      <p>
+        <p class="note">
+          \(m\) and \(n\) are the results from the equation
+          <i class="danger">(4)</i>.
+        </p>
+        <h3>The Product of two vectors</h3>
+        <p>
+          $$\vec{a} \times \vec{b} = \begin{bmatrix}\vec{i} & \vec{j} & \vec{k} \\\ a_x & a_y & a_z \\\ b_x & b_y & b_z
+          \end{bmatrix}=$$
+        </p>
+        <p>
+          $$\vec{i}\begin{bmatrix}a_y & a_z \\\ b_y & b_z\end{bmatrix} - \vec{j}\begin{bmatrix}a_x & a_z \\\ b_x &
+          a_z\end{bmatrix} + \vec{k}\begin{bmatrix}a_x & a_y \\\ b_x & b_y\end{bmatrix}=$$
+        </p>
+        <p>$$p\vec{i} + q\vec{j} + r\vec{k}$$</p>
+        <p class="note">\(p\), \(q\) and \(r\) are the results that come out from matrices</p>
+        <h3>Area of Parallelogram</h3>
+        <p>$$Area = \left\vert\vec{a} \times \vec{b}\right\vert$$</p>
+        <h3>Area of a triangle</h3>
+        <p>$$Area = {1\over 2} \left\vert\vec{a} \times \vec{b}\right\vert$$</p>
+        <p class="note">SI unit for Area - [square units]</p>
+      </article>
+    </div>
+    {% include 'sidebar.njk' %}
+  </div>

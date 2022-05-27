@@ -1,0 +1,23 @@
+{# for demo only #}
+<aside class="sidebar">
+    <div class="sidebar__regions flow">
+        <nav class="sidebar__region sticky">
+            <h2 class="sr-only">Side Menu</h2>
+            <ul class="fa-ul flow">
+                {% checklist name="Math", link="#" %}
+                {% checklist name="Physics", link="#" %}
+                {% checklist name="Science", link="#" %}
+                {% checklist name="IT", link="#" %}
+            </ul>
+        </nav>
+        <nav class="sidebar__region">
+            <h2 class="sr-only">Side Menu</h2>
+            <ul class="fa-ul flow">
+                {% checklist name="FAQ", link="#" %}
+                {% checklist name="Support", link="#" %}
+                {% checklist name="Donate", link="#" %}
+                {% checklist name="Contact", link="#" %}
+            </ul>
+        </nav>
+    </div>
+</aside>
