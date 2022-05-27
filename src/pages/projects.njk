@@ -9,51 +9,30 @@ layout: 'base.njk'
     <article class="flow">
       <h2 class="fs-700">Projects</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, obcaecati. Incidunt ratione illum libero, iste
-        laudantium dolores doloremque odio veritatis ipsam expedita nam explicabo tempore officiis! Facere maxime aliquam
-        doloremque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, obcaecati. Incidunt ratione
+        illum libero, iste laudantium dolores doloremque odio veritatis ipsam expedita nam explicabo tempore
+        officiis! Facere maxime aliquam doloremque.
       </p>
     </article>
-    <div class="layouts flow">
-      {% layout 
-        title="Math", 
-        imgUrl="/assets/images/img-1.jpg",
-        imgAlt="laptop on a desk",
-        link="#",
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Quibusdam dolor expedita, possimus quisquam quas nemo nam
-            deserunt velit hic quasi, consequuntur"
-      %}
-      {% layout 
-        title="Physics", 
-        imgUrl="/assets/images/img-2.jpg",
-        imgAlt="windows logo",
-        link="#",
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Quibusdam dolor expedita, possimus quisquam quas nemo nam
-            deserunt velit hic quasi, consequuntur",
-        dark="true"
-      %}
-      {% layout 
-        title="Science", 
-        imgUrl="/assets/images/img-3.jpg",
-        imgAlt="different colored pencils",
-        link="#",
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Quibusdam dolor expedita, possimus quisquam quas nemo nam
-            deserunt velit hic quasi, consequuntur"
-      %}
-      {% layout 
-        title="IT", 
-        imgUrl="/assets/images/img-1.jpg",
-        imgAlt="laptop on a desk",
-        link="#",
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Quibusdam dolor expedita, possimus quisquam quas nemo nam
-            deserunt velit hic quasi, consequuntur",
-        dark="true"
-      %}
-    </div>
+    {% for project in collections.projects %}
+      <section class="layout clearfix">
+        <div class="layout__img">
+          <a href="{{ project.url }}">
+            <img loading="lazy" src="{{ project.data.img }}" alt="{{ project.data.img }}"/>
+          </a>
+        </div>
+        <div class="layout__info flow bg-white text dark">
+          <h3 class="fs-500">
+            <a href="{{ project.url }}" class="u-hover">{{ project.data.title }}</a>
+          </h3>
+          <p>{{ project.data.description }}</p>
+        </div>
+      </section>
+    {% endfor %}
   </div>
-  {% include 'sidebar.njk' %}
+  <aside class="sidebar">
+    <div class="sidebar__regions flow">
+      {% include 'sidebar.njk' %}
+    </div>
+  </aside>
 </div>

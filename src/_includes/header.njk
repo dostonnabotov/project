@@ -1,32 +1,41 @@
 <header>
-    <div class="header container--wide">
-      <div>
-        <img class="logo" width="50px" src="/assets/logo.png" alt="" />
-      </div>
-      <button class="mobile-nav-toggle" aria-controls="primary-nav">
-        <span class="sr-only" aria-expanded="false">Menu</span>
-      </button>
-      <nav>
-        <ul id="primary-nav" class="primary-nav bg-white" data-visible="false" role="list">
-          <li><a href="/">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li class="dropdown">
-            <button class="dropdown__btn">
-              <a href="/pages/projects">
-                Projects
-                <i class="fas fa-angle-down"></i>
-              </a>
-            </button>
-            <ul class="dropdown__content" role="list">
-              <li><a href="/pages/projects/math">Math</a></li>
-              <li><a href="#">Physics</a></li>
-              <li><a href="#">Science</a></li>
-              <li><a href="#">IT</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="header container--wide">
+    <div>
+      <img class="logo" width="50px" src="/assets/logo.png" alt=""/>
     </div>
-  </header>
+    <button class="mobile-nav-toggle" aria-controls="primary-nav">
+      <span class="sr-only" aria-expanded="false">Menu</span>
+    </button>
+    <nav>
+      <ul id="primary-nav" class="primary-nav bg-white" data-visible="false" role="list">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li class="dropdown">
+          <button class="dropdown__btn">
+            <a href="/pages/projects">
+              Projects
+              <i class="fas fa-angle-down"></i>
+            </a>
+          </button>
+          <ul class="dropdown__content" role="list">
+            {% for project in collections.projects %}
+              <li>
+                <a href="{{ project.url }}">{{ project.data.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

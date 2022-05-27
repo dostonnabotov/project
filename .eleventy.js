@@ -7,21 +7,21 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("layout", (layout) => {
     return `
-            <section class="layout clearfix">
-              <div class="layout__img">
-                <a href="${layout.link}">
-                  <img loading="lazy" src="${layout.imgUrl}" alt="${layout.imgAlt}" />
-                </a>
-              </div>
-              <div class="layout__info flow ${
-                layout.dark ? `bg-dark text-white` : `bg-white text-dark`
-              }">
-                <h3 class="fs-500">
-                  <a href="${layout.link}" class="u-hover">${layout.title}</a>
-                </h3>
-                <p>${layout.content}</p>
-              </div>
-            </section>`;
+            {% for math in collections.maths %}
+              <section class="layout clearfix">
+                <div class="layout__img">
+                  <a href="{{ math.url }}">
+                    <img loading="lazy" src="{{ math.data.img }}" alt="{{ math.data.img }}"/>
+                  </a>
+                </div>
+                <div class="layout__info flow bg-white text dark">
+                  <h3 class="fs-500">
+                    <a href="{{ math.url }}" class="u-hover">{{ math.data.title }}</a>
+                  </h3>
+                  <p>{{ math.data.description }}</p>
+                </div>
+              </section>
+            {% endfor %}`;
   });
 
   eleventyConfig.addShortcode("checklist", (checklist) => {

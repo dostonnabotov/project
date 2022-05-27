@@ -1,34 +1,35 @@
 ---
-title: Maths
-img: /assets/images/img-2.jpg
-imgAlt: windows logo
-description: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+title: Physics
+img: /assets/images/img-1.jpg
+imgAlt: laptop
+description: consectetur, adipisicing elit.
   Quibusdam dolor expedita, possimus quisquam quas nemo nam
   deserunt velit hic quasi
 tags: projects
+# for demo only
 layout: "article-snippet.njk"
 ---
 
 <div class="content flow">
   <article class="flow">
-    <h2>Maths</h2>
+    <h2>Physics</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ducimus recusandae eligendi a,
       eius, commodi numquam omnis minima voluptate odit adipisci molestiae! Voluptate itaque officiis
       eaque, alias asperiores rerum inventore.</p>
   </article>
   <div class="layouts flow">
-    {% for math in collections.maths %}
+    {% for physics in collections.physics %}
       <section class="layout clearfix">
         <div class="layout__img">
-          <a href="{{ math.url }}">
-            <img loading="lazy" src="{{ math.data.img }}" alt="{{ math.data.img }}"/>
+          <a href="{{ physics.url }}">
+            <img loading="lazy" src="{{ physics.data.img }}" alt="{{ physics.data.img }}"/>
           </a>
         </div>
         <div class="layout__info flow bg-white text dark">
           <h3 class="fs-500">
-            <a href="{{ math.url }}" class="u-hover">{{ math.data.title }}</a>
+            <a href="{{ physics.url }}" class="u-hover">{{ physics.data.title }}</a>
           </h3>
-          <p>{{ math.data.description }}</p>
+          <p>{{ physics.data.description }}</p>
         </div>
       </section>
     {% endfor %}
@@ -39,16 +40,15 @@ layout: "article-snippet.njk"
     <nav class="sidebar__region">
       <h2 class="sr-only">Side Menu</h2>
       <ul class="fa-ul flow">
-        {% for math in collections.maths %}
+        {% for physics in collections.physics %}
           <li>
             <span class="fa-li">
               <i class="fa-solid fa-check"></i>
             </span>
-            <a href="{{ math.url }}" class="u-hover">{{ math.data.title }}</a>
+            <a href="{{ physics.url }}" class="u-hover">{{ physics.data.title }}</a>
           </li>
         {% endfor %}
       </ul>
     </nav>
-    {% include 'sidebar.njk' %}
   </div>
 </aside>

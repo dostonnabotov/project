@@ -93,7 +93,6 @@ p:not([class]) {
 .container--narrow {
   width: min(100% - 1.5rem, 45rem);
   margin-inline: auto;
-  outline: 1px solid;
 }
 
 .container--wide {
