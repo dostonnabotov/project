@@ -6,7 +6,7 @@
   --fs-900: 3rem;
   --fs-700: 2rem;
   --fs-500: 1.5rem;
-  --fs-400: 1.125rem;
+  --fs-400: 1rem;
 
   --fw-900: 700;
   --fw-500: 600;
@@ -14,6 +14,12 @@
 
   --box-shadow-2: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   --box-shadow-1: 0px 8px 16px 0px rgba(80, 80, 80, 0.2);
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-400: 1.125rem;
+  }
 }
 
 /* =============  
@@ -29,7 +35,8 @@ body,
 h1,
 h2,
 h3,
-p {
+p,
+blockquote {
   margin: 0;
 }
 
@@ -45,7 +52,7 @@ body {
   font-weight: var(--fw-400);
   line-height: 1.6;
 
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 
   color: var(--neutral-400);
 }
@@ -79,7 +86,8 @@ ol[role="list"] {
 }
 
 p:not([class]) {
-  max-width: 70ch;
+  width: min(100%, 70ch);
+  overflow-x: auto;
 }
 
 /* =============  
@@ -91,7 +99,7 @@ p:not([class]) {
 }
 
 .container--narrow {
-  width: min(100% - 1.5rem, 45rem);
+  width: min(100%, 50rem);
   margin-inline: auto;
 }
 
@@ -176,7 +184,8 @@ p:not([class]) {
   text-decoration: underline;
 }
 
-.note {
+.note,
+blockquote {
   max-width: 70ch;
   padding: 1rem;
   background-color: #eceaea;
@@ -341,6 +350,7 @@ i[class="danger"] {
 }
 
 .content {
+  overflow-x: hidden;
   grid-area: content;
 }
 .sidebar {

@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{{ title }}</title>
+    {# font awesome #}
     <link
-      rel="stylesheet"
+    rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="{{ '/style.css' | url }}"/>
+      referrerpolicy="no-referrer"/> {# custom css #}
+    <link
+    rel="stylesheet" href="{{ '/style.css' | url }}"/>
+    {# custom javascript #}
     <script src="/index.js" defer></script>
   </head>
   <body>
@@ -19,8 +22,11 @@
     <main>
       {{ content | safe }}
     </main>
+    {% include 'back-to-top.njk' %}
+    {# MathJax link #}
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    {# MathJax inline script #}
     <script type="text/javascript">
       MathJax = {
         tex: {

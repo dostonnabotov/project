@@ -2,7 +2,12 @@
 
 ## Changelog
 
-- **Version 0.2.0 _(2022, May 28)_**
+- **Version 0.2.1 _(2022, May 28)_**
+
+  - Discrete Math added
+  - Overflow and other bug fixes
+
+- **Version 0.2.0 _(2022, May 27)_**
 
   - multi-page function developed
   - Header links updated
