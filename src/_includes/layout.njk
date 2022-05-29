@@ -1,0 +1,27 @@
+---
+layout: 'base.njk'
+---
+
+<div class="grid grid--main container--wide">
+    <div class="content container--narrow flow">
+        <article class="flow">
+            <h2>{{ title }}</h2>
+            <img src="{{ img }}" alt="{{ imgAlt }}"/>
+            <div class="layout__meta">
+                <p class>Written By
+                    <span class="uppercase">{{ author }}</span>
+                </p>
+                <p class>on
+                    <span class="uppercase">{{ date | postDate }}</span>
+                </p>
+            </div>
+            <p>{{ description }}</p>
+        </article>
+        {{ content | safe }}
+    </div>
+    <aside class="sidebar">
+        <div class="sidebar__regions flow">
+            {% include "sidebar.njk" %}
+        </div>
+    </aside>
+</div>

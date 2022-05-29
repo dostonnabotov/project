@@ -15,21 +15,28 @@
           <a href="#">About</a>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <a href="/blog">Blog</a>
         </li>
         <li class="dropdown">
           <button class="dropdown__btn">
-            <a href="/pages/projects">
+            <a href="/projects">
               Projects
               <i class="fas fa-angle-down"></i>
             </a>
           </button>
           <ul class="dropdown__content" role="list">
-            {% for project in collections.projects %}
-              <li>
-                <a href="{{ project.url }}">{{ project.data.title }}</a>
-              </li>
-            {% endfor %}
+            <li>
+              <a href="#">Maths</a>
+            </li>
+            <li>
+              <a href="#">Physics</a>
+            </li>
+            <li>
+              <a href="#">Science</a>
+            </li>
+            <li>
+              <a href="#">IT</a>
+            </li>
           </ul>
         </li>
         <li>

@@ -2,6 +2,11 @@
 
 ## Changelog
 
+- **Version 0.2.2 _(2022, May 29)_**
+
+  - Projects merged with Blog
+  - Update on layout and sidebar
+
 - **Version 0.2.1 _(2022, May 28)_**
 
   - Discrete Math added

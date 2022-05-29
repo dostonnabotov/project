@@ -1,8 +1,11 @@
 ---
 title: Mathematical Induction
+author: Doston Nabotov
+date: 2022-05-28
+description: Mathematical Induction is a mathematical proof technique. It is essentially used to prove that a statement P(n) holds for every natural number $n = 0, 1, 2, 3, ... $ There are 3 steps need to be implemented to achieve the desired result
 img: /assets/images/img-3.jpg
 imgAlt: pencils
-description: Mathematical Induction is a mathematical proof technique. It is essentially used to prove that a statement $P(n)$ holds for every natural number $n = 0, 1, 2, 3, ... $ There are 3 steps need to be implemented to achieve the desired result
+tags: ["discrete math", "mathematical induction"]
 ---
 
 ## Mathematical Induction

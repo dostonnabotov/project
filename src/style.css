@@ -50,9 +50,9 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: var(--fs-400);
   font-weight: var(--fw-400);
-  line-height: 1.6;
+  line-height: 1.5;
 
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 
   color: var(--neutral-400);
 }
@@ -61,7 +61,7 @@ h1,
 h2,
 h3 {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 img {
@@ -139,9 +139,7 @@ p:not([class]) {
 }
 
 /* Typography */
-.fs-900 {
-  font-size: var(--fs-900);
-}
+
 .fs-700 {
   font-size: var(--fs-700);
 }
@@ -149,14 +147,8 @@ p:not([class]) {
   font-size: var(--fs-500);
 }
 
-.fw-900 {
-  font-weight: var(--fw-900);
-}
 .fw-500 {
   font-weight: var(--fw-500);
-}
-.fw-400 {
-  font-weight: var(--fw-400);
 }
 
 .text-white {
@@ -313,7 +305,7 @@ i[class="danger"] {
   position: fixed;
   bottom: 1.5rem;
   right: 2rem;
-  padding: 8px 15px;
+  padding: 6px 15px;
 
   background-color: var(--neutral-900);
   color: var(--neutral-100);
@@ -350,9 +342,11 @@ i[class="danger"] {
 }
 
 .content {
+  margin-inline: auto;
   overflow-x: hidden;
   grid-area: content;
 }
+
 .sidebar {
   grid-area: sidebar;
 }
@@ -378,13 +372,56 @@ i[class="danger"] {
   height: 100%;
 }
 
-.layout__info {
+.layout__content {
   width: min(100%, 40rem);
   --flow-spacer: 1rem;
   padding: 1rem;
 }
 
+.layout__info {
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.layout__info::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(transparent 10px, #fff);
+}
+
+.layout__meta {
+  display: flex;
+  --gap: 0;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.tag {
+  display: inline-block;
+  width: fit-content;
+  width: -moz-fit-content; /* for Firefox */
+  padding: 0.2em 0.7em;
+
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  background-color: var(--neutral-900);
+  color: var(--neutral-100);
+  border-radius: 0.7rem 0 0.7rem 0;
+}
+
 @media (min-width: 60em) {
+  .content {
+    margin-inline: unset;
+  }
+
   .layout__img {
     position: absolute;
     top: 0;
@@ -404,7 +441,7 @@ i[class="danger"] {
     transform: scale(1.15);
   }
 
-  .layout__info {
+  .layout__content {
     width: 70%;
     float: right;
     position: relative;
@@ -425,8 +462,19 @@ i[class="danger"] {
 }
 
 .sidebar__region {
+  width: min(100%, 40rem);
+  margin-inline: auto;
   font-size: 1rem;
   border: 4px solid lightgray;
   border-radius: 2rem 0 2rem 0;
   padding: 1rem;
+}
+
+.sidebar__region > .fa-ul {
+  --flow-spacer: 0.5rem;
+}
+
+.sidebar__title {
+  margin: 0;
+  margin-left: 0.5rem;
 }
