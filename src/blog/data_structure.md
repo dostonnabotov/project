@@ -1,5 +1,5 @@
 ---
-title: Data Structure
+title: Introduction to Data Structure
 author: Doston Nabotov
 date: 2022-05-30
 description: Important notes for Data Structure. Types of data structures as well as what they are used for. Basic Introduction to Data Structure
