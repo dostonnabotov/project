@@ -3,7 +3,7 @@ title: Parabola
 author: Doston Nabotov
 date: 2022-05-30
 description: A parabola is the locus of all points in the plane equidistant from a given point F and a given line.  The point F is called the focus of the parabola and the line is called the directrix.
-img: https://www.geogebra.org/resource/V6Xd2nVj/ypSbC1m1qcVe1DKA/material-V6Xd2nVj.png
+img: https://i.pinimg.com/originals/dc/e1/92/dce192eb0dce817f2f6fd7869f827f13.jpg
 imgAlt: parabola real-life example
 tags: ["geometry", "conic sections", "parabola"]
 ---
@@ -19,39 +19,39 @@ tags: ["geometry", "conic sections", "parabola"]
 
 ![up sided parabola](/assets/images/parabola-up.png)
 
-**Canonical Equation:** $ x^{2} = 2py $
+**Canonical Equation:** $$ x^{2} = 2py $$
 
-**Coordinates of the focus:** $ F(0, \frac{p}{2}) $
+**Coordinates of the focus:** $$ F(0, \frac{p}{2}) $$
 
-**Equation of the Directrix:** $ y = - \frac{p}{2} $
+**Equation of the Directrix:** $$ y = - \frac{p}{2} $$
 
 ### Down sided parabola
 
 ![down sided parabola](/assets/images/parabola-down.png)
 
-**Canonical Equation:** $ x^{2} = -2py $
+**Canonical Equation:** $$ x^{2} = -2py $$
 
-**Coordinates of the focus:** $ F(0, - \frac{p}{2}) $
+**Coordinates of the focus:** $$ F(0, - \frac{p}{2}) $$
 
-**Equation of the Directrix:** $ y = \frac{p}{2} $
+**Equation of the Directrix:** $$ y = \frac{p}{2} $$
 
 ### Left sided parabola
 
 ![left sided parabola](/assets/images/parabola-left.png)
 
-**Canonical Equation:** $ y^{2} = -2px $
+**Canonical Equation:** $$ y^{2} = -2px $$
 
-**Coordinates of the focus:** $ F(- \frac{p}{2}, 0) $
+**Coordinates of the focus:** $$ F(- \frac{p}{2}, 0) $$
 
-**Equation of the Directrix:** $ x = \frac{p}{2} $
+**Equation of the Directrix:** $$ x = \frac{p}{2} $$
 
 ### Right sided parabola
 
-**Canonical Equation:** $ y^{2} = 2px $
+**Canonical Equation:** $$ y^{2} = 2px $$
 
-**Coordinates of the focus:** $ F(\frac{p}{2}, 0) $
+**Coordinates of the focus:** $$ F(\frac{p}{2}, 0) $$
 
-**Equation of the Directrix:** $ x = - \frac{p}{2} $
+**Equation of the Directrix:** $$ x = - \frac{p}{2} $$
 
 ### Examples
 
