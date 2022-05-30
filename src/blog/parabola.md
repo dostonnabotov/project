@@ -3,7 +3,7 @@ title: Parabola
 author: Doston Nabotov
 date: 2022-05-30
 description: A parabola is the locus of all points in the plane equidistant from a given point F and a given line.  The point F is called the focus of the parabola and the line is called the directrix.
-img: https://i.pinimg.com/originals/dc/e1/92/dce192eb0dce817f2f6fd7869f827f13.jpg
+img: https://stormhighway.com/thumbsl/5dr1-9338.jpg
 imgAlt: parabola real-life example
 tags: ["geometry", "conic sections", "parabola"]
 ---
