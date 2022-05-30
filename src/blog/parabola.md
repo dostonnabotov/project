@@ -47,6 +47,8 @@ tags: ["geometry", "conic sections", "parabola"]
 
 ### Right sided parabola
 
+![right sided parabola](/assets/images/parabola-right.png)
+
 **Canonical Equation:** $$ y^{2} = 2px $$
 
 **Coordinates of the focus:** $$ F(\frac{p}{2}, 0) $$
