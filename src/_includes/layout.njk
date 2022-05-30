@@ -16,8 +16,8 @@ layout: 'base.njk'
                 </p>
             </div>
             <p>{{ description }}</p>
+            {{ content | safe }}
         </article>
-        {{ content | safe }}
     </div>
     <aside class="sidebar">
         <div class="sidebar__regions flow">
