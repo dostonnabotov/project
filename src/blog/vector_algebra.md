@@ -4,8 +4,7 @@ author: Doston Nabotov
 date: 2022-05-31
 img: /assets/images/img-2.jpg
 imgAlt: windows logo
-description: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-  Quibusdam dolor expedita, possimus quisquam quas nemo nam
+description: Mainly coverning the basics of vector algebra, and essential formulas to solve equations. Also, you can find exercises that are done below.
   deserunt velit hic quasi, consequuntur
 tags: ["math", "vector algebra", "featured"]
 ---
