@@ -1,7 +1,7 @@
 ---
 title: Vector Algebra
 author: Doston Nabotov
-date: 2022-05-27
+date: 2022-05-31
 img: /assets/images/img-2.jpg
 imgAlt: windows logo
 description: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -81,7 +81,7 @@ $$\vec{a}\vec{b}\vec{c} = 0$$
 $$\vec{a}\rightrightarrows\vec{b} \Leftrightarrow {a_x\over b_x}={a_y\over b_y}={a_z\over b_z}$$
 
 > $\vec{a}\rightrightarrows\vec{b}$ means that $\vec{a}$ is parallel to $\vec{b}$ <br/><br/>
-> If the vector are linearly dependent, you are often asked to find the express $\vec{c}$ as a linear combination of
+> If the vector are linearly dependent, you are often asked to express $\vec{c}$ as a linear combination of
 > $\vec{a}$ and $\vec{b}$. Let's solve it.
 
 **(1)**
@@ -125,3 +125,42 @@ $$Area = \left\vert\vec{a} \times \vec{b}\right\vert$$
 $$Area = {1\over 2} \left\vert\vec{a} \times \vec{b}\right\vert$$
 
 > SI unit for Area - [square units]
+
+
+## Examples
+
+**Example #1:** Find the third coordinate of the projection of the point $P$ onto the given plane
+
+$$ P(-2,4,2), \ 3x-y+2z+34=0 $$
+
+$$ \color{#f00}proj_{\vec{b}} \vec{a} = \frac{\vec{a} \cdot \vec{b}}{\left\vert \vec{b} \right\vert} $$
+
+**Solution:** $ P(-2,4,2), Q(3,-1,2) $
+
+$$ proj_{\vec{Q}} \vec{P} = \frac{\vec{P} \cdot \vec{Q}}{\left\vert \vec{Q} \right\vert} $$
+
+$$ \left\vert \vec{Q} \right\vert = \sqrt{3^2+(-1)^2+2^2} = \sqrt{14} $$
+
+$$ \vec{P} \cdot \vec{Q} = (-6 + \cancel{(-4)} + \cancel{4}) = -6 $$
+
+$$ proj_{\vec{Q}} \vec{P} = - \frac{6}{\sqrt{14}} $$
+
+**Example #2:** Find an equation of the tangent line when $t=2$, given
+
+$$ x=4t, \ y=3t^2+2 $$
+
+$$ \color{#f00}y-y_1 = m(x-x_1), \ y=mx+B $$
+
+$$ \color{#f00}P(x_1, y_1), \ m = \frac{dy}{dx} $$
+
+$$ x=4(2)=8, \\ y=3(2)^2+2=14 \ \Rightarrow\ P(8, 14) $$
+
+$$ \frac{dx}{dt} = 4, \ \frac{dy}{dt} = 6t $$
+
+$$ \frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}} = \frac{6t}{4} = \frac{6(2)}{4} $$
+
+$$ \Rightarrow\ m=3 $$
+
+> After plugging the numbers into the equation, the result is
+
+$$ y-14=3(x-8) \\Rightarrow\ y=3x-10 $$
