@@ -10,19 +10,19 @@ tags: ["calculus", "derivatives"]
 
 ## Table of Contents
 
-- [Derivation Basic Formulas](#derivation-basic-formulas)
+- [Derivation Basic Formulas](#basic-formulas)
 - [Product Rule](#product-rule)
 - [Chain Rule](#chain-rule)
 - [Quotient Rule](#quotient-rule)
 
-## Derivation Basic Formulas {#derivation-basic-formulas}
+## Derivation Basic Formulas <a name="basic-formulas"></a>
 
   - $ (x^a)' = ax^{a-1} $
   - $ (\sin x)' = \cos x $
   - $ (\cos x)' = -\sin x $
   - $ (\tan x)' = \frac{1}{\cos ^2 x} $
 
-## Product Rule {#product-rule}
+## Product Rule <a name="product-rule"></a>
 
 ### Formula
 
@@ -42,7 +42,7 @@ $$ g = \sin x, \ g' = \cos x $$
 
 $$ = f'g+fg' = (2x)(\sin x) + (x^2)(\cos x) $$
 
-## Chain Rule {#chain-rule}
+## Chain Rule <a name="chain-rule"></a>
 
 ### Formula
 
@@ -59,7 +59,7 @@ $$ \color{#f00}\frac{d}{dx}[u^n] = n\ [u]^{n-1} \cdot u' $$
 **Solution:** $$ 4\ (5x+3)^{3}\ (5), \\Rightarrow \ 20(5x+3)^3 $$
 
 
-## Quotient Rule {#quotient-rule}
+## Quotient Rule <a name="quotient-rule"></a>
 
 ### Formula
 
