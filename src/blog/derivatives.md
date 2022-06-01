@@ -17,10 +17,7 @@ tags: ["calculus", "derivatives"]
 
 ## Derivation Basic Formulas <a name="basic-formulas"></a>
 
-  - $ (x^a)' = ax^{a-1} $
-  - $ (\sin x)' = \cos x $
-  - $ (\cos x)' = -\sin x $
-  - $ (\tan x)' = \frac{1}{\cos ^2 x} $
+![derivation basic formulas](/assets/images/Differentiation-formulas.png)
 
 ## Product Rule <a name="product-rule"></a>
 
