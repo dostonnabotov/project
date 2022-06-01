@@ -50,10 +50,37 @@ $$ \color{#f00}\frac{d}{dx}[u^n] = n\ [u]^{n-1} \cdot u' $$
 
 ### Examples
 
-**Example #1:** $$ \frac{d}{dx}[5x+3]^4 $$
+Example #1: $$ \frac{d}{dx}[\ 5x+3\ ]^4 $$
 
+$$ 4\ (5x+3)^{3}\ (5) \\Rightarrow \ 20(5x+3)^3 $$
 
-**Solution:** $$ 4\ (5x+3)^{3}\ (5), \\Rightarrow \ 20(5x+3)^3 $$
+Example #2:  $$ \frac{d}{dx}[\ \cos (x^2)\ ] $$
+
+$$ = -\sin (x^2)(2x) \\Rightarrow \ -2x \\sin(x^2) $$
+
+Example #3:  $$ \frac{d}{dx}[\ \tan (x^3)\ ] $$
+
+$$ = \sec^2 (x^3) \cdot 3x^2 \\Rightarrow \ 3x^2 \\sec^2(x^3) $$
+
+Example #4: $$ \frac{d}{dx}[\ \sec (4x)\ ] $$
+
+$$ = \sec(4x)\\tan(4x) \cdot 4 $$
+
+Example #5: $$ \frac{d}{dx}[\ \ln x)\ ]^7 $$
+
+$$ = 7[\ \ln x\ ]^6 \cdot \frac{1}{x} = \frac{7(\ln x)^6}{x} $$
+
+Example #6: $$ \frac{d}{dx}[\ \frac{1}{(x^2+8)^3}\ ],\ \Rightarrow\ \frac{d}{dx}[\ x^2+8\ ]^{-3} $$
+
+$$ -3[\ x^2+8\ ]^{-4} \cdot (2x) = \frac{-6x}{(x^2+8)^4} $$
+
+Example #7: $$ \frac{d}{dx}(\sin[\ \tan (x^4)\ ]) $$
+
+$$ = \cos (\tan x^4) \cdot \sec^2 (x^4) \cdot (4x^3) $$
+
+Example #8: $$ \frac{d}{dx}[\ \cos^7 (\sin (\sec x^2)) \ ] = \frac{d}{dx}[\ \cos (\sin (\sec x^2))\ ]^7 $$
+
+$$ = 7[\  \cos^7 (\sin (\sec x^2)) \ ]^6 \cdot [\ -\sin (\sin (\sec x^2))\ ] \cdot [\ \cos (\sec x^2)\ ] \cdot \sec (x^2)\tan (x^2) \cdot (2x) $$
 
 
 ## Quotient Rule <a name="quotient-rule"></a>
