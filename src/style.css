@@ -402,6 +402,15 @@ i[class="danger"] {
   color: #666;
 }
 
+article a {
+  text-decoration: underline;
+}
+
+article a:hover,
+article a:focus {
+    text-decoration: none;
+}
+
 .tag {
   display: inline-block;
   width: fit-content;
@@ -453,7 +462,9 @@ i[class="danger"] {
   }
 }
 
-/* Sidebar */
+/* =============  
+  Sidebar
+=============== */
 .sidebar__regions {
   position: sticky;
   top: 1rem;
