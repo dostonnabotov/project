@@ -3,7 +3,7 @@ title: Parabola
 author: Doston Nabotov
 date: 2022-05-30
 description: A parabola is the locus of all points in the plane equidistant from a given point F and a given line.  The point F is called the focus of the parabola and the line is called the directrix.
-img: https://stormhighway.com/thumbsl/5dr1-9338.jpg
+img: /assets/images/maths/parabola-up.png
 imgAlt: parabola real-life example
 tags: ["geometry", "conic sections", "parabola"]
 ---
@@ -17,7 +17,7 @@ tags: ["geometry", "conic sections", "parabola"]
 
 ### Up sided parabola
 
-![up sided parabola](/assets/images/parabola-up.png)
+![up sided parabola](/assets/images/maths/parabola-up.png)
 
 Canonical Equation: $$ x^{2} = 2py $$
 
@@ -27,7 +27,7 @@ Equation of the Directrix: $$ y = - \frac{p}{2} $$
 
 ### Down sided parabola
 
-![down sided parabola](/assets/images/parabola-down.png)
+![down sided parabola](/assets/images/maths/parabola-down.png)
 
 Canonical Equation: $$ x^{2} = -2py $$
 
@@ -37,7 +37,7 @@ Equation of the Directrix: $$ y = \frac{p}{2} $$
 
 ### Left sided parabola
 
-![left sided parabola](/assets/images/parabola-left.png)
+![left sided parabola](/assets/images/maths/parabola-left.png)
 
 Canonical Equation: $$ y^{2} = -2px $$
 
@@ -47,7 +47,7 @@ Equation of the Directrix: $$ x = \frac{p}{2} $$
 
 ### Right sided parabola
 
-![right sided parabola](/assets/images/parabola-right.png)
+![right sided parabola](/assets/images/maths/parabola-right.png)
 
 Canonical Equation: $$ y^{2} = 2px $$
 

@@ -305,7 +305,7 @@ i[class="danger"] {
   position: fixed;
   bottom: 1.5rem;
   right: 2rem;
-  padding: 6px 15px;
+  padding: 8px 15px;
 
   background-color: var(--neutral-900);
   color: var(--neutral-100);
@@ -488,4 +488,107 @@ article a:focus {
 .sidebar__title {
   margin: 0;
   margin-left: 0.5rem;
+}
+
+/* =============  
+  Projects Page
+=============== */
+.cards {
+  --flow-spacer: 1.5rem;
+  width: min(100% - 2rem, 80rem);
+  gap: 2rem;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 25rem);
+
+  /* for demo only */
+  margin: 4rem auto;
+}
+
+.card {
+  --flow-spacer: 1rem;
+  width: min(100%, 25rem);
+  margin-inline: auto;
+  align-self: flex-start;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.card > *:not(.card__img) {
+  padding-inline: 2rem;
+}
+
+.card__img {
+  overflow: hidden;
+}
+
+.card__img img {
+  transition: transform 500ms ease-in-out;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card__img img:hover {
+  transform: scale(1.07);
+}
+
+
+.skills {
+  --gap: .7rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.skill {
+  font-weight: 900;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  opacity: .6;
+}
+
+/* 
+Select every fifth, 
+  [1]: starting at the first
+  [2]: starting at the second
+  [3]: starting at the third
+  [4]: starting at the fourth
+  [5]: starting at the fifth
+*/
+
+.skill:nth-child(5n+1) { color: #ae00ff; } /* [1] */ 
+.skill:nth-child(5n+2) { color: #0066ff; } /* [2] */
+.skill:nth-child(5n+3) { color: #1100ff; } /* [3] */
+.skill:nth-child(5n+4) { color: #ad0000; } /* [4] */
+.skill:nth-child(5n+5) { color: #ff6600; } /* [5] */
+
+.author {
+  --gap: .5rem;
+  align-items: center;
+}
+
+.author__img img {
+  width: 2.8rem;
+  border-radius: 50%;
+}
+
+.author__name {
+  display: block;
+  font-weight: 700;
+  opacity: .8;
+  font-size: .85rem;
+}
+
+.author__date {
+  font-size: .85rem;
+  font-style: italic;
+}
+
+.card__meta {
+  padding-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.card__meta > a:is(:hover, :focus) {
+  text-decoration: underline;
 }
