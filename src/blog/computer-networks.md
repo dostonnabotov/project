@@ -1,7 +1,7 @@
 ---
 title: Computer Networks
 author: Doston Nabotov
-date: 2022-06-02
+date: 2022-06-04
 description: All the necessary topics that are covered during Computer Networks lecture. Test reviews and important notes.
 img: /assets/images/computer-networks/p2p-architecture.jpg
 imgAlt: peer to peer architecture
@@ -17,8 +17,11 @@ tags: ["IT", "computer networks", "featured"]
     - [Application Layer](#application-layer)
       - [Network Architecture](#network-architecture)
       - [DNS](#dns)
-    <!-- - [Transport Layer](#transport-layer)
-    - [Network Layer](#network-layer)
+    - [Transport Layer](#transport-layer)
+      - [TCP](#tcp)
+      - [UDP](#udp)
+      - [Efficiency of UDP and TCP](#efficiency-of-udp-and-tcp)
+    <!-- - [Network Layer](#network-layer)
     - [Data access Layer](#data-access-layer)
     - [Physical Layer](#physical-layer)  -->
 <!-- - [Security](#security)
@@ -168,7 +171,45 @@ Peers are both suppliers and consumers of resources, in contrast to the traditio
 
 ![Local DNS Server](/assets/images/computer-networks/local-dns-server.png)
 
-<!-- ## Transport Layer <a name="transport-layer"></a>
+## Transport Layer <a name="transport-layer"></a>
+
+![TCP and UDP](/assets/images/computer-networks/tcp-and-udp.jpg)
+
+### TCP <a name="tcp"></a>
+
+**TCP**, which stands for **Transmission Control Protocol**, is the most common networking protocol online. TCP is extremely reliable, and is used for everything from surfing the web (HTTP), sending emails (SMTP), and transferring files (FTP). For example, when you visit a website, TCP is used to guarantee that everything from the text, images, and code needed to render the page arrives. `[6]`
+
+TCP is a **connection-oriented protocol**, meaning that it establishes a connection between two devices before transferring data, and maintains that connection throughout the transfer process.
+
+To establish a connection between two devices, TCP uses a method called a three-way handshake.
+
+![TCP three way handshake](/assets/images/computer-networks/tcp-three-way-handshake-simple.png)
+
+### UDP <a name="udp"></a>
+
+**UDP**, which stands for **User Datagram Protocol**, another one of the major protocols that make up the internet protocol suite. UDP is less reliable than TCP, but is much simpler. `[6]`
+
+It is a **connectionless protocol**, meaning that it does not establish a connection beforehand like TCP. UDP doesn't guarantee that all data is successfully transferred.
+
+UDP is the better choice for **live video or streaming media** and **audio or online games** where speed is more important than potential data loss.
+
+### Efficiency <a name="efficiency-of-udp-and-tcp"></a>
+
+What is the **efficiency** of TCP/UDP?
+
+*Physical packet limit* ≅ 1500 bytes
+
+*Service overhead*: UDP – 8 bytes, TCP – 20 bytes
+
+**`Efficiency = useful data data / total size`**
+
+`useful data = total size - overheads`
+
+**UDP max efficiency = 1500−8 / 1500 ≅ 99.5%**
+
+**TCP max efficiency = 1500−20 / 1500 ≅ 98.7%**
+
+<!-- 
 
 ## Network Layer <a name="network-layer"></a>
 
@@ -182,6 +223,9 @@ Peers are both suppliers and consumers of resources, in contrast to the traditio
 
 ## Test Reviews <a name="test-reviews"></a> 
 
+<details>
+  <summary>Test Reviews</summary>
+  
 1. OSI model
 
     - Data packets on the Internet might not travel by the shortest route from one country to another. **`True`**
@@ -200,11 +244,27 @@ Peers are both suppliers and consumers of resources, in contrast to the traditio
 
     - Torrents use peer-to-peer data communication principle. **`True`**
     
+    
+3. Transport Layer
+    
+    - Which protocol should be used if we do not know useful data type and do care about transmission delays and overhead? **`TCP`**
+    
+    - Typical maximal efficiency for TCP packets. **`99%`** *(see the <a href="#efficiency-of-udp-and-tcp">calculation</a> above)*
+    
+    - UDP is more efficient, since it not uses ports. **`False`** *(it is more efficient, but there are a total of 65,535 UDP ports)*
+
+</details>
 
 ## References
 
+<details>
+  <summary>References</summary>
+  
 `[1]` - [Twisted pair](https://en.wikipedia.org/wiki/Twisted_pair) <br>
 `[2]` - [Coaxial cable](https://en.wikipedia.org/wiki/Coaxial_cable) <br>
 `[3]` - [Optical fiber](https://en.wikipedia.org/wiki/Optical_fiber) <br>
 `[4]` - [Client-server Architecture](https://www.geeksforgeeks.org/client-server-model/) <br>
 `[5]` - [Peer-to-peer Architecture](https://en.wikipedia.org/wiki/Peer-to-peer) <br>
+`[6]` - [TCP and UDP](https://www.freecodecamp.org/news/tcp-vs-udp/)
+
+</details>
