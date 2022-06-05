@@ -6,7 +6,7 @@ img: /assets/images/img-2.jpg
 imgAlt: windows logo
 description: Mainly coverning the basics of vector algebra, and essential formulas to solve equations. Also, you can find exercises that are done below.
   deserunt velit hic quasi, consequuntur
-tags: ["math", "vector algebra", "featured"]
+tags: ["math", "vector algebra"]
 ---
 
 ## Vector Algebra Formulas
