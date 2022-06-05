@@ -17,7 +17,7 @@ tags: ["math", "featured"]
   - [Analytical Geometry](#analytical-geometry)
 
 
-## Linear Algebra <a name="linear-algebra" />
+## Linear Algebra <a name="linear-algebra"></a>
 
   - Solve the system of equation, using following methods:
       1. Gauss Elimination Method
@@ -27,7 +27,7 @@ tags: ["math", "featured"]
   - Determinant
   - Matrix addition, subtraction, multiplication
  
-## Vector Algebra <a name="vector-algebra" />
+## Vector Algebra <a name="vector-algebra"></a>
 
   - Magnitude, dot and cross product of vectors
   - Angles (triangle), direction cosines, laws of cosines
@@ -39,7 +39,7 @@ tags: ["math", "featured"]
   - Median (coordinates, length)
   - Projections
 
-## Functions and Limits <a name="functions-and-limits" />
+## Functions and Limits <a name="functions-and-limits"></a>
 
   - Basic Elementary Functions:
       - odd, even and neither odd nor even
@@ -63,7 +63,7 @@ tags: ["math", "featured"]
       - infinity
       - a number
 
-## Differential Calculus <a name="differential-calculus" />
+## Differential Calculus <a name="differential-calculus"></a>
 
   - The Derivative of a function
   - Rules
@@ -78,7 +78,7 @@ tags: ["math", "featured"]
   - L'Hopital Rule
   - Velocity and Acceleration (instantaneous)
 
-## Analytical Geometry <a name="analytical-geometry" />
+## Analytical Geometry <a name="analytical-geometry"></a>
 
   - Conic Sections
       - Circle
@@ -88,16 +88,4 @@ tags: ["math", "featured"]
   - Polar coordinates
   - Cartesian coordinates
   - Equation of line in a plane
-
-
-
-
-
-
-
-
-
-
-
-
 
