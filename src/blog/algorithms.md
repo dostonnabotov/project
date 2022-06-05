@@ -8,7 +8,9 @@ imgAlt: pencils
 tags: ["IT", "algorithms", "featured"]
 ---
 
-```js:
+### Remove Duplicate Elements in a array
+
+```js
 // remove duplicate elements in an array
 
 const removeDuplicates = (arr) => {
