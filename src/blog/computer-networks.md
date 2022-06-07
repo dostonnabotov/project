@@ -14,17 +14,17 @@ tags: ["IT", "computer networks", "featured"]
   - [Cables](#cables)
   - [Tools](#tools)
 - [Layers](#seven-layers)
-    - [Application Layer](#application-layer)
-      - [Network Architecture](#network-architecture)
-      - [DNS](#dns)
-    - [Transport Layer](#transport-layer)
-      - [TCP](#tcp)
-      - [UDP](#udp)
-      - [Efficiency of UDP and TCP](#efficiency-of-udp-and-tcp)
-    <!-- - [Network Layer](#network-layer)
-    - [Data access Layer](#data-access-layer)
-    - [Physical Layer](#physical-layer)  -->
-<!-- - [Security](#security)
+- [Application Layer](#application-layer)
+  - [Network Architecture](#network-architecture)
+  - [DNS](#dns)
+- [Transport Layer](#transport-layer)
+  - [TCP](#tcp)
+  - [UDP](#udp)
+  - [Efficiency of UDP and TCP](#efficiency-of-udp-and-tcp)
+- [Network Layer](#network-layer)
+- [Data access Layer](#data-access-layer)
+- [Physical Layer](#physical-layer)
+- [Security](#security)
 - [Real-time](#real-time) -->
 - [Test Reviews](#test-reviews)
 - [References](#references)
@@ -209,17 +209,67 @@ What is the **efficiency** of TCP/UDP?
 
 **TCP max efficiency = 1500−20 / 1500 ≅ 98.7%**
 
-<!-- 
+ 
 
 ## Network Layer <a name="network-layer"></a>
 
+Private address range is ONLY found in LAN, never in Internet
+
+Commands for editing routes in Windows:
+
+- Check existing routes - `route print`
+- Delete route - `route delete x.x.x.x`
+- Add route - `route add 0.0.0.0 mask 0.0.0.0 10.1.1.1 metric 10`
+
+IPv4 address problems
+
+- Network nodes increase
+- Mobile devices
+- Always on devices
+- Internet usage increase
+- Inefficient address policies
+- Virtualization
+
 ## Data access Layer <a name="data-access-layer"></a>
+
+MAC address only inside LAN. To send data outside LAN, should use IP
+
+MAC address first 3 bytes - manufacturer code
+
+- **FDMA** - Frequency Division Multiple Access
+  - Hear different musical instruments at the same time
+
+- **SDMA** - Space division multiple access
+  - Move away from speakers
+
+- **CSMA**, Token - Packet mode methods
+  - Wait and repeat talking, pass microphone
+
+- **TDMA** - Time Division Multiple Access
+  - Speak one after another
+
+- **CDMA** - Code Division Multiple Access
+  - Speak different languages
+
+**ALOHA** - transmit till data is received
+
+More users - less efficiency. Since collision probability increases and requires repeated transmit
+
+**CSMA* - check media before sending, therefore minimizes collision possibility
+
+No collisions
+	- FDMA — divided by frequencies
+	- TDMA — divided by time on the same frequency
+	- Space – nodes separated by distance (no signal received)
+
+Collision avoidance: CSMA — same frequency, uses random access
+
 
 ## Physical Layer <a name="physical-layer"></a>
 
 ## Security <a name="security"></a>
 
-## Real-time <a name="real-time"></a> -->
+## Real-time <a name="real-time"></a>
 
 ## Test Reviews <a name="test-reviews"></a> 
 
@@ -238,20 +288,41 @@ What is the **efficiency** of TCP/UDP?
 
 2. Application Layer
 
-    - Cookies allow to trace user historical acivity on web page. **`True`**
+  - Cookies allow to trace user historical acivity on web page. **`True`**
 
-    - Proxy servers are used only to hide own identity. **`False`**
+  - Proxy servers are used only to hide own identity. **`False`**
 
-    - Torrents use peer-to-peer data communication principle. **`True`**
+  - Torrents use peer-to-peer data communication principle. **`True`**
     
     
 3. Transport Layer
     
-    - Which protocol should be used if we do not know useful data type and do care about transmission delays and overhead? **`TCP`**
-    
-    - Typical maximal efficiency for TCP packets. **`99%`** *(see the <a href="#efficiency-of-udp-and-tcp">calculation</a> above)*
-    
-    - UDP is more efficient, since it not uses ports. **`False`** *(it is more efficient, but there are a total of 65,535 UDP ports)*
+  - Which protocol should be used if we do not know useful data type and do care about transmission delays and overhead? **`TCP`**
+
+  - Typical maximal efficiency for TCP packets. **`99%`** *(see the <a href="#efficiency-of-udp-and-tcp">calculation</a> above)*
+
+  - UDP is more efficient, since it not uses ports. **`False`** *(it is more efficient, but there are a total of 65,535 UDP ports)*
+
+4. Network Layer
+  
+  - What is the minimal information amount required to send packets inside LAN? `MAC address`
+  
+5. Physical Layer
+  
+  - Physical layer is located on top of OSI model, at layer #7. **`False`** *it is located on bottom, at layer #1*
+  
+  - WiFi protocols include OSI layer #1. **`True`** *it operates on the Physical and Data Link layers*
+  
+  - OSI model has 6 layers. **`False`** *it has 7 layers*
+  
+  - Typical twisted pair cable has 8 wires inside. **`True`**
+  
+  ![twisted pair](/assets/images/computer-networks/twisted-pair.jpg)
+  
+  - Typically twisted pair cable allows long-distance transmission as compared to optical fiber. **`False`**. *Optical fibers permit transmission over longer distances and at higher bandwidths*
+  
+  - Optical fibers are usually twisted inside the cable. **`False`**
+
 
 </details>
 
