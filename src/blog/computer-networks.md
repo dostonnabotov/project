@@ -269,7 +269,68 @@ Collision avoidance: CSMA — same frequency, uses random access
 
 ## Security <a name="security"></a>
 
+Brute forcing is hard, since 1026 combinations. But using specific language statistics, words can be decoded.
+
+### Symmetric Key <a name="symmetric-key"></a>
+
+Each symbol is encoded differently depending on neighbours symbols
+
+**Advantages**: 
+	- Fast encoding as compared with asymmetric
+	- If key is lost, other partners are not affected
+
+**Disadvantages**: 
+	- Safe channel should be used beforehand, to exchanged keys
+	- Each pair should have their own key
+	- Cannot identify sender
+	- Not guarantees integrity
+
+### Asymmetric key (RSA) <a name="asymmetric-key"></a>
+
+**Advantages**: 
+	- No need to hide public key
+	- Additional identification of sender
+	- Verifies integrity
+
+**Disadvantages**: 
+	- Should be some safe authority for verifying public key
+	- Encoding is slower if compared with symmetric
+	- If secret key is lost, it is not possible to restore
+
+### Hybrid coding <a name="hybrid-coding"></a>
+
+   1. Create safe channel by using public key.
+   2. By using newly created channel, exchange symmetric keys.
+   3. Continue data exchange by using efficient symmetric key, changing it at some intervals.
+   4. In the result – safe, fast, and efficient data exchange.
+
+
+
 ## Real-time <a name="real-time"></a>
+
+### Latency (acceptable delays) <a name="latency"></a>
+
+video - audio -> 80ms
+video - text -> 240ms
+audio - text -> 240ms
+audio - image -> 500ms
+audio - mouse cursor -> 500ms
+
+| Perceived Quality | Latency        |
+|-------------------|----------------|
+| Excellent         | 0 to 150ms     |
+| Good              | 150ms to 300ms |
+| Poor              | 300ms to 450ms |
+| Unacceptable      | above 450ms    |
+
+
+**CSMA vs TDMA**
+
+CSMA cannot guarantee stable jitter due to the random
+nature of sending probability.
+
+TDMA uses a dedicated transmission sequence
+
 
 ## Test Reviews <a name="test-reviews"></a> 
 
@@ -323,6 +384,13 @@ Collision avoidance: CSMA — same frequency, uses random access
   
   - Optical fibers are usually twisted inside the cable. **`False`**
 
+	
+6. Security
+
+  - Symmetric encryption is faster than asymmetric. **`True`**
+  - All encryption methods use the same key for encoding and decoding. **`False`**
+  - Typically, only asymmetric algorithms are used for data transmission on the Internet, since everyone can capture the data. **`False`**. *other algorithms are also used for data tranmission, like symmetric one*
+  - The hash function can be used to encrypt and decrypt data. **`False`**. *only used to encrypt data*
 
 </details>
 
