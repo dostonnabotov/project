@@ -3,46 +3,67 @@ title: Project | Projects
 layout: 'base.njk'
 ---
 
-<h1>Frontend Mentor Challenges</h1>
 <div class="cards">
-  {# Use this as a template #}
-  <div class="card flow">
-    <div class="card__img">
-      <a href="https://github.com/dostonnabotov/social-media-dashboard-with-theme-switcher-master">
-        <img src="/assets/images/desktop-preview.jpg" alt="desktop preview"> 
-      </a>
-    </div>
-    <div class="card__content flow">
-      <h2>
-        <a href="https://github.com/dostonnabotov/social-media-dashboard-with-theme-switcher-master">Social Media Dashboard</a>
-      </h2>
-      <div class="skills flex">
-        <span class="skill">HTML</span>
-        <span class="skill">Sass</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">React</span>
-      </div>
-      <div class="author flex">
-        <div class="author__img">
-          <img src="/assets/images/coding.jpg" alt="coding">
-        </div>
-        <div>
-          <span class="author__name">Doston Nabotov</span>
-          <span class="author__date">June 3, 2022</span>
-        </div>
-      </div>
-      <p>That was a great challenge for me to practice dark and light theme in the website. Aligning them
-        to match the design perfectly took some time, but yet it was a lot of fun!</p>
-    </div>
-    <div class="card__meta flex">
-      <a href="https://github.com/dostonnabotov/social-media-dashboard-with-theme-switcher-master">
-        <i class="fab fa-github"></i>
-        Github Repository
-      </a>
-      <a href="https://social-media-dashboard-with-theme-switcher-main.netlify.app/">
-        <i class="fas fa-link"></i>
-        Live Site
-      </a>
-    </div>
-  </div>
+  {% card 
+    url="https://dostonnabotov.github.io/nft-preview-card-component-main/",
+    github="https://github.com/dostonnabotov/nft-preview-card-component-main",
+    title="NFT preview card component",
+    img="/assets/images/frontend-mentor/nft-card-component.png",
+    imgAlt="screenshot of NFT preview card component",
+    skill_1="HTML",
+    skill_2="CSS",
+    date="Jun 7, 2022"
+  %}
+  {% card 
+    url="https://dostonnabotov.github.io/social-media-dashboard-with-theme-switcher-master/",
+    github="https://github.com/dostonnabotov/social-media-dashboard-with-theme-switcher-master",
+    title="Social Media Dashboard",
+    img="/assets/images/frontend-mentor/social-media-dashboard.png",
+    imgAlt="screenshot of Social Media Dashboard",
+    skill_1="HTML",
+    skill_2="Sass",
+    skill_3="JavaScript",
+    date="Jun 7, 2022"
+  %}
+  {% card 
+    url="https://dostonnabotov.github.io/social-proof-section-master/",
+    github="https://github.com/dostonnabotov/social-proof-section-master",
+    title="Social Proof Section",
+    img="/assets/images/frontend-mentor/social-proof-section.png",
+    imgAlt="screenshot of Social Proof Section",
+    skill_1="HTML",
+    skill_2="Sass",
+    date="Jun 7, 2022"
+  %}
+  {% card 
+    url="https://dostonnabotov.github.io/four-card-feature-section-master/",
+    github="https://github.com/dostonnabotov/four-card-feature-section-master",
+    title="Four Card Feature Section",
+    img="/assets/images/frontend-mentor/four-card-feature-section.png",
+    imgAlt="screenshot of Four Card Feature Section",
+    skill_1="HTML",
+    skill_2="CSS",
+    date="Jun 7, 2022"
+  %}
+  {% card 
+    url="https://dostonnabotov.github.io/3-column-preview-card-component-main/",
+    github="https://github.com/dostonnabotov/3-column-preview-card-component-main",
+    title="3 column preview card",
+    img="/assets/images/frontend-mentor/3-column-preview-card.png",
+    imgAlt="screenshot of 3 column preview card",
+    skill_1="HTML",
+    skill_2="CSS",
+    date="Jun 7, 2022"
+  %}
+  {% card 
+    url="https://fm-interactive-pricing-component.netlify.app/",
+    github="https://github.com/dostonnabotov/interactive-pricing-component-main",
+    title="Interactive Pricing component",
+    img="/assets/images/frontend-mentor/interactive-pricing-component.png",
+    imgAlt="screenshot of Interactive Pricing component",
+    skill_1="HTML",
+    skill_2="Sass",
+    skill_3="JavaScript",
+    date="Jun 7, 2022"
+  %}
 </div>

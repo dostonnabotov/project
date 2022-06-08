@@ -2,6 +2,11 @@
 
 ## Changelog
 
+- **Version 0.2.3 _(2022, Jun 8)_**
+
+  - Projects added and updated
+  - Several blog posts are added
+
 - **Version 0.2.2 _(2022, May 29)_**
 
   - Projects merged with Blog

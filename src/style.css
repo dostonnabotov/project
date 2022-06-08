@@ -5,7 +5,7 @@
 
   --fs-900: 3rem;
   --fs-700: 2rem;
-  --fs-500: 1.5rem;
+  --fs-500: 1.2rem;
   --fs-400: 1rem;
 
   --fw-900: 700;
@@ -19,6 +19,7 @@
 @media (min-width: 50em) {
   :root {
     --fs-400: 1.125rem;
+    --fs-500: 1.5rem;
   }
 }
 
@@ -494,43 +495,51 @@ article a:focus {
   Projects Page
 =============== */
 .cards {
-  --flow-spacer: 1.5rem;
-  width: min(100% - 2rem, 80rem);
-  gap: 2rem;
-  justify-content: center;
+  width: min(100% - 1rem, 70rem);
   display: grid;
-  grid-template-columns: repeat(auto-fit, 25rem);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
 
   /* for demo only */
   margin: 4rem auto;
+  overflow-x: hidden;
 }
 
 .card {
-  --flow-spacer: 1rem;
-  width: min(100%, 25rem);
+  width: min(95%, 350px);
+  height: 100%;
   margin-inline: auto;
   align-self: flex-start;
   border-radius: 1rem;
   background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .card > *:not(.card__img) {
-  padding-inline: 2rem;
+  padding-inline: 1.5rem;
 }
 
 .card__img {
   overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .card__img img {
   transition: transform 500ms ease-in-out;
   border-radius: 1rem 1rem 0 0;
+  height: 15rem;
+  object-fit: cover;
+  width: 100%;
 }
 
 .card__img img:hover {
   transform: scale(1.07);
 }
 
+.card__content h2 {
+  font-size: var(--fs-500);
+  color: var(--neutral-400);
+}
 
 .skills {
   --gap: .7rem;
@@ -585,8 +594,15 @@ Select every fifth,
 }
 
 .card__meta {
-  padding-bottom: 2rem;
+  padding-block: 2rem;
+  align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 40em) {
+  .card__meta {
+    flex-direction: column;
+  }
 }
 
 .card__meta > a:is(:hover, :focus) {
