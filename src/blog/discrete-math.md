@@ -52,7 +52,7 @@ For the arbitrary sets A, B, C, prove or disprove the given composite set equali
 
 ## Mapping on SETS
 
-Classify the given mapping y A B :  by checking its 6 properties
+Classify the given mapping y: A \rightarrow B by checking its 6 properties
 
   1. Well-defined
   2. Functional
