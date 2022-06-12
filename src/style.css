@@ -595,7 +595,7 @@ Select every fifth,
 
 .card__meta {
   padding-block: 2rem;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
