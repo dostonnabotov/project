@@ -1,7 +1,7 @@
 ---
 title: OSI Model
 author: Doston Nabotov
-date: 2022-06-04
+date: 2022-06-14
 description: All the necessary topics regarding OSI Model that are covered during Computer Networks lecture. Test reviews and important notes.
 img: /assets/images/computer-networks/p2p-architecture.jpg
 imgAlt: peer to peer architecture
