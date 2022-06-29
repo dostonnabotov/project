@@ -2,3 +2,40 @@
 title: Project | Home
 layout: 'base.njk'
 ---
+
+<div class="grid grid--main container--wide">
+  <div class="content flow">
+    <h1 class="fs-700">Featured Articles</h1>
+    <div class="layouts flow">
+      {% for post in collections.featured | reverse %}
+        <section class="layout clearfix">
+          <div class="layout__img">
+            <a href="{{ post.url }}">
+              <img loading="lazy" src="{{ post.data.img }}" alt="{{ post.data.imgAlt }}"/>
+            </a>
+          </div>
+          <div class="layout__content flow bg-white text dark">
+            <div class="flow">
+              <p class="fs-500 fw-500">
+                <a href="{{ post.url }}" class="u-hover">{{ post.data.title }}</a>
+              </p>
+              <p class="layout__info">{{ post.data.description }}</p>
+            </div>
+            <div class="layout__meta flex">
+              <p class="uppercase">{{ post.data.author }}</p>
+              <p class="uppercase">{{ post.date | postDate }}</p>
+            </div>
+            {% for tag in post.data.tags %}
+              <span class="tag">#{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+  <aside class="sidebar">
+    <div class="sidebar__regions flow">
+      {% include "sidebar.njk" %}
+    </div>
+  </aside>
+</div>
