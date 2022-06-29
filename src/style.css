@@ -141,37 +141,19 @@ p:not([class]) {
 
 /* Typography */
 
-.fs-700 {
-  font-size: var(--fs-700);
-}
-.fs-500 {
-  font-size: var(--fs-500);
-}
+.fs-700 { font-size: var(--fs-700); }
+.fs-500 { font-size: var(--fs-500); }
 
-.fw-500 {
-  font-weight: var(--fw-500);
-}
+.fw-500 { font-weight: var(--fw-500); }
 
-.text-white {
-  color: var(--neutral-100);
-}
-.text-dark {
-  color: var(--neutral-900);
-}
+.text-white { color: var(--neutral-100); }
+.text-dark { color: var(--neutral-900); }
 
-.bg-white {
-  background-color: var(--neutral-100);
-}
-.bg-dark {
-  background-color: var(--neutral-900);
-}
+.bg-white { background-color: var(--neutral-100); }
+.bg-dark { background-color: var(--neutral-900); }
 
-.text-center {
-  text-align: center;
-}
-.uppercase {
-  text-transform: uppercase;
-}
+.text-center { text-align: center; }
+.uppercase { text-transform: uppercase; }
 
 .u-hover:hover {
   text-decoration: underline;
@@ -372,8 +354,7 @@ article a {
   text-decoration: underline;
 }
 
-article a:hover,
-article a:focus {
+article a:is(:hover, :focus) {
     text-decoration: none;
 }
 
